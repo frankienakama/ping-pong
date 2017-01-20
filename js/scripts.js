@@ -1,6 +1,11 @@
 //back-end
-
-
+var countingArray = function(input) {
+    var result = [];
+        for(var i=1; i<=input; i++) {
+          result.push(i);
+        }
+    return result;
+}
 
 
 
@@ -10,19 +15,13 @@ $(document).ready(function() {
     event.preventDefault();
     var input = $("#user-input").val();
 
-    var counting = [];
-    for(var i=1; i<=input; i++) {
-      counting.push(i);
-    }
+    var result = countingArray(input);
 
-    $("#result").text(counting);
-
-    alert(counting);
+    $("#result").text(result);
   })
 });
-
 //variables:
 //form id="input"
 //input id="user-input"
 //span id="result"
-//function with for loop = "counting"
+//function with for loop = "countingArray"
