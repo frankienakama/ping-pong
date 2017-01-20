@@ -1,10 +1,11 @@
 //back-end
-var counting = [];
-for(var i=1; i<=input; i++) {
-  counting.push(i);
+var countingArray = function(input) {
+    var result = [];
+        for(var i=1; i<=input; i++) {
+          result.push(i);
+        }
+    return result;
 }
-
-alert(counting);
 
 
 //front-end
@@ -13,7 +14,9 @@ $(document).ready(function() {
     event.preventDefault();
     var input = $("#user-input").val();
 
-    $("#result").text(counting);
+    var result = countingArray(input);
+
+    $("#result").text(result);
   })
 });
 
