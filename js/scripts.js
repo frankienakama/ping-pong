@@ -26,6 +26,11 @@ $(document).ready(function() {
     for (var j = 0; j < result.length; j++) {
       $("#result").append("<p>" + result[j] + "</p>")
     };
+
+    $("button").click(function() {
+      $("span").empty();
+    });
+    
   });
 });
 
