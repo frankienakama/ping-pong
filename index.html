@@ -9,17 +9,23 @@
   </head>
   <body>
     <div class="container">
+      <h1 class="cute-header">Ping! Pong! Ping Pong!</h1>
 <!--form begins here-->
-      <form id="input">
-        <label for="user-input">Let's play! Please enter a number:</label>
-        <input type="number" class="form-control" id="user-input"></input>
-        <button type="submit" class="btn">Your serve!</button>
-      </form>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <form id="input">
+            <label for="user-input">Let's play! Please enter a number:</label>
+            <input type="number" class="form-control" id="user-input"></input>
+            <button type="submit" class="btn">Your serve!</button>
+          </form>
+        </div>
 <!---where counting and ping/pong is displayed-->
-      <div>
-        <span id="result"></span>
+        <div class="col-md-3">
+        <div class="col-md-3">
+          <span id="result"></span>
+        </div>
       </div>
-
     </div>
   </body>
 </html>
