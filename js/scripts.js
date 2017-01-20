@@ -21,11 +21,12 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     var input = $("#user-input").val();
-
     var result = countingArray(input);
 
-    $("#result").text(result);
-  })
+    for (var j = 0; j < result.length; j++) {
+      $("#result").append("<p>" + result[j] + "</p>")
+    };
+  });
 });
 
 //variables:
