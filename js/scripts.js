@@ -1,5 +1,10 @@
 //back-end
+var counting = [];
+for(var i=1; i<=input; i++) {
+  counting.push(i);
+}
 
+alert(counting);
 
 
 //front-end
