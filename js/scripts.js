@@ -1,11 +1,8 @@
 //back-end
-var numInput = function(checkNum) {
-  if(isNaN(checkNum)) {
-    return false;
-  }else{
-    return true;
+var numInput = function isInteger(checkNum) {
+  return !isNaN(checkNum);
   };
-};
+
 
 
 
