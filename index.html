@@ -3,6 +3,7 @@
   <head>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|News+Cycle" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/CSS">
     <link href="css/styles.css" rel="stylesheet" type="text/CSS">
     <title>Ping Pong</title>
@@ -12,17 +13,24 @@
       <h1 class="cute-header">Ping! Pong! Ping Pong!</h1>
 <!--form begins here-->
       <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-left">
           <form id="input">
             <label for="user-input">Let's play! Please enter a number:</label>
             <input type="number" class="form-control" id="user-input"></input>
-            <button type="submit" class="btn">Your serve!</button>
+            <button type="submit" class="btn btn-block">Your serve!</button>
           </form>
+          <div class="bio"><br>
+            <p>This little game was created using HTML, CSS, Bootstrap, JQuery, and Javascript.</p>
+
+            <p>I hope you have fun playing! Please feel free to share with your friends, or take inspiration to make a little ping pong page of your own.</p>
+
+            <img src="img/bio.png" class="fluid">
+
+            <p>If you'd like to contact me, feel free to email me <a href="mailto:sara.frandsen@gmail.com">here</a> or follow me on GitHub <a href="https://github.com/sarafrandsen">here!</a> I like to talk about the struggles of learning to program, dogs, and coffee.</p>
+          </div>
         </div>
 <!---where counting and ping/pong is displayed-->
-        <div class="col-md-3">
-        <div class="col-md-3">
+        <div class="col-md-6 col-right">
           <span id="result"></span>
         </div>
       </div>
