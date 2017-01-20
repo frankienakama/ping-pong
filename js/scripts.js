@@ -1,33 +1,26 @@
 //back-end
-// var numInput = function isInteger(checkNum) {
-//   return !isNaN(checkNum);
-//   };
 
+var counting = [];
+for(var i=1; i<=input; i++) {
+  counting.push(i);
+}
 
-//step one - can count
+alert(counting);
 
-  var counting = [];
-  for(var i=1; i<=number; i++) {
-    counting.push(i);
-  }
-
-  alert(counting);
-console.log();
+var input = parseInt("input#user-input");
 
 //front-end
 $(document).ready(function() {
-  $("#input").submit(function(event) {
-    event.preventDefault();
-    var number = $("#user-input").val();
-    // var result = makeList(number);
+  $("form#input").submit(function(event) {
 
+    var result = counting(input);
+    $("span#result").show(result);
   });
 });
-
 
 
 //variables:
 //form id="input"
 //input id="user-input"
 //span id="result"
-//function with for loop = makeList
+//function with for loop = "counting"
