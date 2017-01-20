@@ -1,23 +1,16 @@
 //back-end
 
-var counting = [];
-for(var i=1; i<=input; i++) {
-  counting.push(i);
-}
 
-alert(counting);
-
-var input = parseInt("input#user-input");
 
 //front-end
 $(document).ready(function() {
-  $("form#input").submit(function(event) {
-
-    var result = counting(input);
-    $("span#result").show(result);
+	$("#english").submit(function(e) {
+  	e.preventDefault();  // none of your BS, form
+    var word = $("#string").val();  // get the word from the input
+    var result = isLatin(word);  // call `isLatin` with the word
+    $("#pig").text(result);
   });
 });
-
 
 //variables:
 //form id="input"
