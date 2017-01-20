@@ -1,8 +1,6 @@
 //back-end
-var numInput = "userNumInput";
-
-var checkInt = function() {
-  if(isNaN(numInput)) {
+var numInput = function(checkNum) {
+  if(isNaN(userNumInput)) {
     return false;
   }else{
     return true;
@@ -16,13 +14,12 @@ var checkInt = function() {
 
 //front-end
 $(document).ready(function() {
-  $("form#enterNum".submit(function(event)) {
-    even.prevenDefault();
+  $("form#enterNum".submit(function(event) {
+    event.preventDefault();
     var numInput = parseInt($("input#userNumInput").val());
     var result = numInput
-
-    $("#returnNumList").show());
   });
+});
 
 
 
@@ -30,4 +27,4 @@ $(document).ready(function() {
 //form id="enterNum"
 //input id="userNumInput"
 //span id="numList"
-//
+//var numInput = turns userNumInput into number
