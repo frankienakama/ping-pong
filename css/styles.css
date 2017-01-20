@@ -9,11 +9,17 @@ label {
 .bio {
   font-size: 20px;
 }
-img {
+#bio {
   float: left;
   width: 200px;
   margin-right: 10px;
   border-radius: 50%;
+}
+#paddle{
+  float: right;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 100%;
 }
 .cute-header {
   background-image: url("../img/bg2.jpg");
