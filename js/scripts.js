@@ -11,8 +11,9 @@ alert(counting);
 $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
-    result = $("#user-input").val();
-    $("#result").text(result);
+    var input = $("#user-input").val();
+
+    $("#result").text(counting);
   })
 });
 
