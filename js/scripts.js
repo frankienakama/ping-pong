@@ -1,29 +1,33 @@
 //back-end
-var numInput = function isInteger(checkNum) {
-  return !isNaN(checkNum);
-  };
+// var numInput = function isInteger(checkNum) {
+//   return !isNaN(checkNum);
+//   };
 
 
+//step one - can count
 
+  var counting = [];
+  for(var i=1; i<=number; i++) {
+    counting.push(i);
+  }
 
-
-
+  alert(counting);
+console.log();
 
 //front-end
 $(document).ready(function() {
-  $("form#enterNum").submit(function(event) {
+  $("#input").submit(function(event) {
     event.preventDefault();
-    var checkNum = parseInt($("input#userNumInput").val());
-    var result = numInput(checkNum);
+    var number = $("#user-input").val();
+    // var result = makeList(number);
 
-    alert(result);
   });
 });
 
 
 
 //variables:
-//form id="enterNum"
-//input id="userNumInput"
-//span id="numList"
-//var numInput = turns userNumInput into number
+//form id="input"
+//input id="user-input"
+//span id="result"
+//function with for loop = makeList
