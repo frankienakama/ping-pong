@@ -6,19 +6,13 @@ var numInput = function isInteger(checkNum) {
 
 
 
-
-
-
-//front-end
-$(document).ready(function() {
-  $("form#enterNum").submit(function(event) {
-    event.preventDefault();
-    var checkNum = parseInt($("input#userNumInput").val());
-    var result = numInput(checkNum);
-
-    alert(result);
+  $(document).ready(function() {
+    $("form").submit(function(event) {
+      event.preventDefault();
+      userInput = $("#user-input").val();
+      $("#returnNumList").text(result);
+    })
   });
-});
 
 
 
