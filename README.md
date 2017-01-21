@@ -52,6 +52,12 @@ This is a simple web page created for my third solo project at Epicodus. It is a
 * JQUERY
 * JAVASCRIPT
 
+## Credit
+
+Cartoon image of dog playing table tennis to [teru.mina]https://www.instagram.com/teru.mina/ on Instagram
+
+Credit bio image to myself.
+
 ## Contact information
 
 If you'd like to contact me regarding this project or others, you can find me at

@@ -1,25 +1,6 @@
 body {
   margin-top: 10px;
-  font-family: 'News Cycle', sans-serif;
   color: #196179;
-}
-label {
-  font-size: 40px;
-}
-.bio {
-  font-size: 20px;
-}
-#bio {
-  float: left;
-  width: 200px;
-  margin-right: 10px;
-  border-radius: 50%;
-}
-#paddle{
-  float: right;
-  width: 200px;
-  margin-top: 10px;
-  border-radius: 100%;
 }
 .cute-header {
   background-image: url("../img/bg2.jpg");
@@ -36,20 +17,40 @@ label {
   margin-bottom: 10px;
   font-size: 50px;
 }
+label {
+  font-size: 40px;
+  font-family: 'Lobster Two', cursive;;
+}
+p#intro {
+  font-family: 'Rambla', sans-serif;
+  font-size: 30px;
+}
+.bio {
+  font-size: 18px;
+}
+img#bio {
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+img#paddle{
+  float: right;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
 .col-md-6 {
   height: 500px;
   overflow-y: auto;
   direction: ltr;
-}
-.col-left {
+  border: 2px;
+  border-color: #196179;
   background-color: #E1E1E1;
   border-radius: 25px;
-}
-.col-right {
-  background-color: #E1E1E1;
-  border-radius: 25px;
-  text-align: center;
 }
 span {
-  font-size: 100px;
+  font-size: 90px;
+  font-family: 'Lobster Two', cursive;;
+  text-align: center;
 }
