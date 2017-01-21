@@ -1,5 +1,4 @@
 body {
-  margin-top: 10px;
   color: #196179;
 }
 .cute-header {
@@ -50,7 +49,7 @@ img#paddle{
   border-radius: 25px;
 }
 span {
-  font-size: 90px;
+  font-size: 105px;
   font-family: 'Lobster Two', cursive;;
   text-align: center;
 }

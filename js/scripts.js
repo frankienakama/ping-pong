@@ -25,12 +25,14 @@ $(document).ready(function() {
 
     for (var j = 0; j < result.length; j++) {
       $("#result").append("<p>" + result[j] + "</p>")
+
+      $("img#paddle").hide();
     };
 
     $("button").click(function() {
       $("span").empty();
     });
-    
+
   });
 });
 
