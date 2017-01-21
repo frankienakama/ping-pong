@@ -34,10 +34,11 @@ img#bio {
   border-radius: 50%;
 }
 img#paddle{
-  float: right;
-  width: 200px;
-  margin-top: 10px;
-  border-radius: 50%;
+  border-radius: 50%;;
+  width: 400px;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
 }
 .col-md-6 {
   height: 500px;
